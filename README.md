@@ -13,19 +13,19 @@ __Test Cases__
 1. Deposit Money and Compare Balance:
   * Goal: Ensure that after depositing a predefined amount, the balance reflects the correct value.
   * Steps:
-    1. Login to the customer account.
-    2. Capture the current balance.
-    3. Add a predefined deposit amount.
-    4. Perform the deposit action.
-    5. Verify the updated balance is correct.
+    * Login to the customer account.
+    * Capture the current balance.
+    * Add a predefined deposit amount.
+    * Perform the deposit action.
+    * Verify the updated balance is correct.
 2. Withdraw Money and Update Balance:
-  *Goal: Ensure that after withdrawing a predefined amount, the balance reflects the correct value.
-  *Steps:
-    1.Login to the customer account.
-    2.Capture the current balance.
-    3.Subtract a predefined withdrawal amount.
-    4.Perform the withdrawal action.
-    5.Verify the updated balance is correct.
+  * Goal: Ensure that after withdrawing a predefined amount, the balance reflects the correct value.
+  * Steps:
+    * Login to the customer account.
+    * Capture the current balance.
+    * Subtract a predefined withdrawal amount.
+    * Perform the withdrawal action.
+    * Verify the updated balance is correct.
 
 __How It Works__
   * Login: The test suite begins by selecting a specific customer and logging into their account.
