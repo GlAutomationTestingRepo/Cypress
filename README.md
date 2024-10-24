@@ -32,6 +32,8 @@ __How It Works__
   * Balance Handling: It captures the current balance using Cypress's .invoke("text") method.
   * Transactions: The suite performs deposit and withdrawal actions by entering values in the respective fields and clicking the necessary buttons.
   * Assertions: After each transaction, the updated balance is compared with the expected value using assertions to ensure accuracy.
+    
 __Dependencies__
+
   * Cypress
   * TypeScript
