@@ -27,33 +27,51 @@ __Test Cases__
     4.Perform the withdrawal action.
     5.Verify the updated balance is correct.
 __Project Structure__
+Cypress
+ ├── ApplicationLogic
+ │ ├── Components
+ │ │ ├── BankManager
+ │ │ │ ├── Customers
+ │ │ │ │ └── CustomerTable.ts
+ │ │ │ │ └── SearchCustomers.ts
+ │ │ │ └── AddCustomer.ts
+ │ │ │ └── OpenAccount.ts
+ │ │ ├── CustomerLogin
+ │ │ │ └── CustomerMainPage.ts
+ │ │ │ └── Deposit.ts
+ │ │ │ └── Transactions.ts
+ │ │ │ └── Withdrawl.ts
+ │ │ └── BankManagerLogin.ts
+ │ │ └── PageHeader.ts
+ │ ├── Enums
+ │ │ └── CustomEnums.ts
+ │ ├── Pages
+ │ │ └── BasePage.ts
+ │ │ └── MainPage.ts
+ │ │ └── PageManager.ts
+ ├── downloads
+ ├── e2e
+ │ └── test.cy.ts
+ ├── fixtures
+ ├── support
+ └── node_modules
 
-- **Cypress/ApplicationLogic** 
-  - **Components**
-    - **BankManager**
-      - **Customers**
-        - `CustomerTable.ts`: 
-        - `SearchCustomers.ts`: 
-      - `AddCustomer.ts`: 
-      - `OpenAccount.ts`: 
-    - **CustomerLogin**: 
-      - `CustomerMainPage.ts`: 
-      - `Deposit.ts`: 
-      - `Transactions.ts`: 
-      - `Withdrawl.ts`: 
-    - `BankManagerLogin.ts`: 
-    - `PageHeader.ts`: 
-  - **Enums**:
-    - `CustomEnums.ts`: 
-  - **Pages**:
-    - `BasePage.ts`: 
-    - `MainPage.ts`: 
-    - `PageManager.ts`: 
+__Key Files:__
+  +PageManager: Centralizes the management of page objects and components for ease of access and reuse.
+  +Enums: Holds the constant values used across the tests, such as deposit and withdrawal amounts, customer names, and button identifiers.
+__Installation__
+  +Clone the repository:
+    git clone https://github.com/GlAutomationTestingRepo/Cypress.git
+  +Install dependencies:
+    npm install
+  +Run Cypress:
+    npx cypress open
 
-- **Cypress/downloads**: 
-- **Cypress/e2e**: 
-  - `test.cy.ts`: 
-- **Cypress/fixtures**: 
-- **Cypress/support**: 
-
-- **node_modules**: 
+__How It Works__
+  +Login: The test suite begins by selecting a specific customer and logging into their account.
+  +Balance Handling: It captures the current balance using Cypress's .invoke("text") method.
+  +Transactions: The suite performs deposit and withdrawal actions by entering values in the respective fields and clicking the necessary buttons.
+  +Assertions: After each transaction, the updated balance is compared with the expected value using assertions to ensure accuracy.
+__Dependencies__
+  +Cypress
+  +TypeScript
