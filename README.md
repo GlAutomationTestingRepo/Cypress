@@ -27,35 +27,7 @@ __Test Cases__
     4.Perform the withdrawal action.
     5.Verify the updated balance is correct.
 __Project Structure__
-Cypress
- ├── ApplicationLogic
- │ ├── Components
- │ │ ├── BankManager
- │ │ │ ├── Customers
- │ │ │ │ └── CustomerTable.ts
- │ │ │ │ └── SearchCustomers.ts
- │ │ │ └── AddCustomer.ts
- │ │ │ └── OpenAccount.ts
- │ │ ├── CustomerLogin
- │ │ │ └── CustomerMainPage.ts
- │ │ │ └── Deposit.ts
- │ │ │ └── Transactions.ts
- │ │ │ └── Withdrawl.ts
- │ │ └── BankManagerLogin.ts
- │ │ └── PageHeader.ts
- │ ├── Enums
- │ │ └── CustomEnums.ts
- │ ├── Pages
- │ │ └── BasePage.ts
- │ │ └── MainPage.ts
- │ │ └── PageManager.ts
- ├── downloads
- ├── e2e
- │ └── test.cy.ts
- ├── fixtures
- ├── support
- └── node_modules
-
+Cypress ├── ApplicationLogic │ ├── Components │ │ ├── BankManager │ │ │ ├── Customers │ │ │ │ ├── CustomerTable.ts │ │ │ │ ├── SearchCustomers.ts │ │ │ ├── AddCustomer.ts │ │ │ ├── OpenAccount.ts │ │ ├── CustomerLogin │ │ │ ├── CustomerMainPage.ts │ │ │ ├── Deposit.ts │ │ │ ├── Transactions.ts │ │ │ ├── Withdrawl.ts │ │ ├── BankManagerLogin.ts │ │ ├── PageHeader.ts │ ├── Enums │ │ ├── CustomEnums.ts │ ├── Pages │ │ ├── BasePage.ts │ │ ├── MainPage.ts │ │ ├── PageManager.ts ├── downloads ├── e2e │ ├── test.cy.ts ├── fixtures ├── support └── node_modules
 __Key Files:__
   +PageManager: Centralizes the management of page objects and components for ease of access and reuse.
   +Enums: Holds the constant values used across the tests, such as deposit and withdrawal amounts, customer names, and button identifiers.
